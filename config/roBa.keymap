@@ -81,10 +81,10 @@
 
         MacOS {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                   &kp T                                                            &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&kp Q             &kp W         &kp E         &kp R                   &kp T                                                            &kp Y        &kp U  &lt 8 I    &kp O    &lt 5 P
 &kp A             &kp S         &kp D         &kp F                   &kp G        &kp LS(LG(S))                    &kp K_VOLUME_UP    &kp H        &kp J  &kp K      &kp L    &kp MINUS
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                   &kp B        &kp TAB                          &kp K_VOLUME_DOWN  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 LANG2  &lt 1 SPACE  &lt_to_layer_0 3 LANGUAGE_1      &kp BACKSPACE      &lt 1 ENTER                             &kp LS(LA(LC(NUMBER_5)))
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 7 LANG2  &lt 1 SPACE  &lt_to_layer_0 3 LANGUAGE_1      &kp BACKSPACE      &lt 1 ENTER                             &kp LS(LA(LC(NUMBER_5)))
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
@@ -128,12 +128,12 @@
             >;
         };
 
-        WindowsOS {
+        SCROLL {
             bindings = <
-&kp Q      &kp W     &kp E   &kp R   &kp T                            &kp Y      &kp U      &kp I    &kp O     &kp P
-&kp A      &kp S     &kp D   &kp F   &kp G      &trans      &trans    &kp H      &kp J      &kp K    &kp L     &kp MINUS
-&kp Z      &kp X     &kp C   &kp V   &kp B      &trans      &kp N     &kp M      &kp COMMA  &kp DOT  &kp FSLH  &trans
-&kp LCTRL  &kp LGUI  &trans  &trans  &kp SPACE  &trans      &kp BSPC  &kp ENTER                                &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &kp SCROLLLOCK
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
 
@@ -146,12 +146,12 @@
             >;
         };
 
-        layer_7 {
+        WindowsOS {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&kp Q      &kp W     &kp E   &kp R   &kp T                            &kp Y      &kp U      &kp I    &kp O     &kp P
+&kp A      &kp S     &kp D   &kp F   &kp G      &trans      &trans    &kp H      &kp J      &kp K    &kp L     &kp MINUS
+&kp Z      &kp X     &kp C   &kp V   &kp B      &trans      &kp N     &kp M      &kp COMMA  &kp DOT  &kp FSLH  &trans
+&kp LCTRL  &kp LGUI  &trans  &trans  &kp SPACE  &trans      &kp BSPC  &kp ENTER                                &trans
             >;
         };
     };
