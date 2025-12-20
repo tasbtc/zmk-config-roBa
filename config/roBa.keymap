@@ -80,6 +80,14 @@
             tap-ms = <20>;
         };
 
+        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+            // 追加: スクロールのタップ時間を設定 (20ms)
+            tap-ms = <20>;
+        };
+
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
@@ -100,10 +108,7 @@
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                   &kp B        &kp TAB                          &kp K_VOLUME_DOWN  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 7 LANG2  &lt 1 SPACE  &lt_to_layer_0 3 LANGUAGE_1      &kp BACKSPACE      &lt 1 ENTER                             &kp LS(LA(LC(NUMBER_5)))
             >;
-
-            // sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>; // ★重複しているためコメントアウトしました（下の行が有効になります）
-
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         NUM {
